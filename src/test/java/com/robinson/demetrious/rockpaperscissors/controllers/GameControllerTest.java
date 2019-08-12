@@ -1,4 +1,4 @@
-package com.robinson.demetrious.rockpaperscissors;
+package com.robinson.demetrious.rockpaperscissors.controllers;
 
 import com.robinson.demetrious.rockpaperscissors.controllers.GameController;
 import com.robinson.demetrious.rockpaperscissors.models.Game;
