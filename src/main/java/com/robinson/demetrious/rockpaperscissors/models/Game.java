@@ -1,7 +1,12 @@
 package com.robinson.demetrious.rockpaperscissors.models;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Game {
+
     private String playerOne;
+
     private String playerTwo;
 
     public String getPlayerOne() {

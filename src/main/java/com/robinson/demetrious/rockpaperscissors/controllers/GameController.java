@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("/game")
 @EnableAutoConfiguration
@@ -22,8 +24,13 @@ public class GameController {
 
     private final Logger log = LoggerFactory.getLogger(GameController.class);
 
+
+    @GetMapping("/form")
+    public String showForm(Game game) {
+        return "form";
+    }
     @PostMapping ("/submit")
-    public String Submit(Game game) {
+    public String Submit(@Valid Game game) {
         System.out.println(game);
         log.info(String.valueOf(game));
         return gameService.getWinner(game);

@@ -5,6 +5,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <form method="POST" action="/game/submit">
+            <div>
+                <h3>Player 1</h3>
+                <input type="text" name="playerOne" />
+            </div>
+
+            <div>
+                <h3>Player 2</h3>
+                <input type="text" name="playerTwo" />
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+    </div>
 </body>
 </html>
