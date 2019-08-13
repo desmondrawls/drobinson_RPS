@@ -24,7 +24,6 @@ public class GameController {
 
     private final Logger log = LoggerFactory.getLogger(GameController.class);
 
-
     @GetMapping("/form")
     public String showForm(Game game) {
         return "form";

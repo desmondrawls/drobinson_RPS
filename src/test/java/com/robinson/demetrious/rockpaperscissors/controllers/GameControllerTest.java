@@ -1,6 +1,5 @@
 package com.robinson.demetrious.rockpaperscissors.controllers;
 
-import com.robinson.demetrious.rockpaperscissors.controllers.GameController;
 import com.robinson.demetrious.rockpaperscissors.models.Game;
 import com.robinson.demetrious.rockpaperscissors.services.GameService;
 import org.junit.Before;
@@ -10,13 +9,13 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import static org.hamcrest.Matchers.*;
+
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.hamcrest.Matchers.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
 
 public class GameControllerTest {
 

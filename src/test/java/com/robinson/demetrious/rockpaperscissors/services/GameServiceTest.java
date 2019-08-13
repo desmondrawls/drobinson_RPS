@@ -19,7 +19,6 @@ public class GameServiceTest {
 
     }
 
-
     @Test
     public void playerOneWins() throws Exception {
         game.setPlayerOne("rock");
@@ -51,6 +50,5 @@ public class GameServiceTest {
         GameService gameService = new GameService();
         assertEquals(gameService.getWinner(game), "Something went wrong");
     }
-
 
 }
